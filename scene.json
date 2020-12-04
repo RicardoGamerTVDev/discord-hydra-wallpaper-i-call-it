@@ -1,0 +1,155 @@
+{
+	"camera" : 
+	{
+		"center" : "0.000 0.000 0.000",
+		"eye" : "0.000 0.000 1.000",
+		"up" : "0.000 1.000 0.000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.3 0.3 0.3",
+		"bloom" : false,
+		"bloomstrength" : 2,
+		"bloomthreshold" : 0.64999997615814209,
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.10000000149011612,
+		"cameraparallaxmouseinfluence" : 0,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1,
+		"camerashakespeed" : 3,
+		"clearcolor" : "0.7 0.7 0.7",
+		"clearenabled" : null,
+		"orthogonalprojection" : 
+		{
+			"height" : 1080,
+			"width" : 1920
+		},
+		"skylightcolor" : "0.3 0.3 0.3"
+	},
+	"objects" : 
+	[
+		{
+			"angles" : "0.000 0.000 0.000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"dependencies" : [ 12 ],
+			"effects" : 
+			[
+				{
+					"file" : "effects/shine/effect.json",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"ui_editor_properties_noise_amount" : 1,
+								"ui_editor_properties_noise_scale" : 7.6500000000000004,
+								"ui_editor_properties_noise_speed" : 0.0099999997764825821,
+								"ui_editor_properties_ray_threshold" : 0.25
+							},
+							"textures" : [ null, "util/white", "util/clouds_256" ]
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"ui_editor_properties_direction" : 5.9000000000000004,
+								"ui_editor_properties_ray_intensity" : 1,
+								"ui_editor_properties_ray_length" : 0.080000000000000002,
+								"ui_editor_properties_speed" : 0.57999999999999996
+							}
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"ui_editor_properties_blur_scale" : "1.55 1.55"
+							}
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"ui_editor_properties_blur_scale" : "1.55 1.55"
+							}
+						},
+						{
+							"textures" : [ null, "_rt_imageLayerComposite_12_a" ]
+						}
+					],
+					"username" : "",
+					"visible" : true
+				}
+			],
+			"id" : 12,
+			"image" : "models/eOQWalT.json",
+			"locktransforms" : true,
+			"name" : "Daft Punk",
+			"origin" : "960.000 540.000 0.000",
+			"parallaxDepth" : "1.000 1.000",
+			"scale" : "1.000 1.000 1.000",
+			"size" : "1920.000 1080.000",
+			"visible" : true
+		},
+		{
+			"angles" : "0.000 0.000 0.000",
+			"id" : 19,
+			"locktransforms" : false,
+			"maxtime" : 5.0,
+			"mintime" : 1.0,
+			"muteineditor" : false,
+			"name" : "daft-punk-harder-better-faster-stronger-far-out-remix-bass-boosted.mp3",
+			"origin" : "0.000 0.000 0.000",
+			"parallaxDepth" : "1.000 1.000",
+			"playbackmode" : "loop",
+			"scale" : "1.000 1.000 1.000",
+			"sound" : 
+			[
+				"sounds/daft-punk-harder-better-faster-stronger-far-out-remix-bass-boosted.mp3"
+			],
+			"volume" : 0.5
+		},
+		{
+			"angles" : "0.000 0.000 0.000",
+			"id" : 87,
+			"image" : null,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.39000000000000001,
+				"lifetime" : 1.5,
+				"size" : 1.3300000000000001,
+				"speed" : 0.080000000000000002
+			},
+			"locktransforms" : false,
+			"model" : null,
+			"name" : "Star field",
+			"origin" : "943.920 515.879 0.000",
+			"parallaxDepth" : "1.000 1.000",
+			"particle" : "particles/presets/starfield.json",
+			"scale" : "2.000 1.300 1.000",
+			"visible" : true
+		},
+		{
+			"angles" : "0.000 0.000 0.000",
+			"id" : 412,
+			"image" : null,
+			"instanceoverride" : 
+			{
+				"lifetime" : 0.66000000000000003
+			},
+			"locktransforms" : false,
+			"model" : null,
+			"name" : "Trails 0",
+			"origin" : "960.000 540.000 0.000",
+			"parallaxDepth" : "1.000 1.000",
+			"particle" : "particles/presets/trail_0.json",
+			"scale" : "2.000 2.000 1.000",
+			"visible" : true
+		}
+	]
+}
